@@ -1,0 +1,16 @@
+{
+    "특가혜택" : [
+        {"번호": 1, "제목":"Banner Img", "이미지":"banner1.jpg", "소개":"banner1"},
+        {"번호": 2, "제목":"Banner Img", "이미지":"banner2.jpg", "소개":"banner2"},
+        {"번호": 3, "제목":"Banner Img", "이미지":"banner3.jpg", "소개":"banner3"},
+        {"번호": 4, "제목":"Banner Img", "이미지":"banner4.jpg", "소개":"banner4"},
+        {"번호": 5, "제목":"Banner Img", "이미지":"banner5.jpg", "소개":"banner5"},
+        {"번호": 6, "제목":"Banner Img", "이미지":"banner6.jpg", "소개":"banner6"},
+        {"번호": 7, "제목":"Banner Img", "이미지":"banner7.jpg", "소개":"banner7"},
+        {"번호": 8, "제목":"Banner Img", "이미지":"banner8.jpg", "소개":"banner8"},
+        {"번호": 9, "제목":"Banner Img", "이미지":"banner9.jpg", "소개":"banner9"},
+        {"번호": 10, "제목":"Banner Img", "이미지":"banner10.jpg", "소개":"banner10"}
+    ]
+
+    
+}

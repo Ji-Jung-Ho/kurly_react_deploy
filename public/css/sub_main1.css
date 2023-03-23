@@ -1,0 +1,350 @@
+#wrap {
+  width: 100%;
+}
+#wrap #main.main1 {
+  width: 100%;
+}
+#wrap #main.main1 #section1 {
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+#wrap #main.main1 #section1 .container {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+#wrap #main.main1 #section1 .container .gap {
+  margin: 0 7px;
+}
+#wrap #main.main1 #section1 .container .gap .content {
+  width: 100%;
+}
+#wrap #main.main1 #section1 .container .gap .content > a {
+  display: block;
+  width: 100%;
+}
+#wrap #main.main1 #section1 .container .gap .content > a img {
+  width: 100%;
+}
+#wrap #main.main1 #section2 {
+  width: 100%;
+  padding: 0 0 100px 0;
+}
+#wrap #main.main1 #section2 .container {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+#wrap #main.main1 #section2 .container .gap {
+  width: 100%;
+  margin: 0;
+}
+#wrap #main.main1 #section2 .container .gap .title {
+  width: 100%;
+  padding: 0 7px 50px 7px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main.main1 #section2 .container .gap .title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main1 #section2 .container .gap .content {
+  width: 100%;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main.main1 #section2 .container .gap .content .left {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  margin: 0 46px 0 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .title-filter {
+  margin: 0 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 40px;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .title-filter span {
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .title-filter span:last-child {
+  color: rgb(153, 153, 153);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .title-filter span svg {
+  margin: -2px 4px 0 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap {
+  margin: 0 7px;
+  height: 100%;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap::-webkit-scrollbar {
+  width: 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category {
+  width: 100%;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-btn {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-btn > svg {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-btn.on svg {
+  transform: rotate(180deg);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub {
+  width: 100%;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub .category-sub-order {
+  margin-bottom: 15px;
+  display: flex;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub .category-sub-order > a {
+  order: 3;
+  font-size: 14px;
+  color: #333;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub .category-sub-order > a:first-child {
+  order: 1;
+  color: #5f0080;
+  font-weight: 500;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub .category-sub-order::after {
+  display: block;
+  order: 2;
+  margin: 2px 10px 0 10px;
+  background-color: #eee;
+  width: 1px;
+  height: 13px;
+  content: "";
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul {
+  width: 100%;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li {
+  width: 100%;
+  padding: 7px 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label:hover {
+  color: rgb(95, 0, 128);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label input {
+  display: none;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label input:checked ~ svg {
+  fill: rgba(95, 0, 128, 0.9);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label svg {
+  vertical-align: middle;
+  margin: -2px 7px 0 0;
+  width: 18px;
+  height: 18px;
+  fill: none;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li label svg path {
+  stroke: #ddd;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li button {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  color: #999;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li button:hover {
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main1 #section2 .container .gap .content .left .col-gap .wrap .category > li .category-sub ul li button svg {
+  margin: -4px 0 0 0;
+  transform: rotate(90deg);
+}
+#wrap #main.main1 #section2 .container .gap .content .right {
+  width: 798px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter {
+  margin: 0 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 40px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu {
+  display: flex;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu > li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu > li:nth-child(2) > a {
+  color: #333;
+  font-weight: 500;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu > li:not(:first-child)::before {
+  background-color: #eee;
+  width: 1px;
+  height: 10px;
+  display: block;
+  content: "";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: 0 7px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu > li > a {
+  color: rgb(153, 153, 153);
+}
+#wrap #main.main1 #section2 .container .gap .content .right .order-filter .order-menu > li > a svg {
+  margin-left: 5px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li {
+  width: 266px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap {
+  margin: 0 7px 14px 7px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap {
+  width: 100%;
+  cursor: pointer;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.6s ease-in-out;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > img:hover {
+  transform: scale(1.06);
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > a {
+  width: 100%;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 2;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > a img {
+  width: 100%;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption {
+  padding: 15px 0 30px 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h6 {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  padding-bottom: 10px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h2 {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  padding-bottom: 10px;
+  line-height: 140%;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h2 strong {
+  font-weight: 400;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h5 {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  padding: 0 0 15px 0;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  line-height: 140%;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 strong {
+  color: rgb(250, 98, 47);
+  font-size: 17px;
+  margin-right: 7px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 em {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 s {
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption span {
+  display: block;
+  font-size: 12px;
+  color: rgb(181, 181, 181);
+  padding-bottom: 10px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption span svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+#wrap #main.main1 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h4 {
+  display: inline-block;
+  font-size: 12px;
+  color: #5f0080;
+  font-weight: 500;
+  background: rgb(244, 244, 244);
+  padding: 5px 7px 7px 7px;
+  border-radius: 4px;
+}

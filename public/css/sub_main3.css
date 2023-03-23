@@ -1,0 +1,329 @@
+#wrap {
+  width: 100%;
+}
+#wrap #main.main3 {
+  width: 100%;
+}
+#wrap #main.main3 #section1 {
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+#wrap #main.main3 #section1 .container {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+#wrap #main.main3 #section1 .container .gap {
+  margin: 0 7px;
+}
+#wrap #main.main3 #section1 .container .gap .content {
+  width: 100%;
+}
+#wrap #main.main3 #section1 .container .gap .content a {
+  display: block;
+  width: 100%;
+}
+#wrap #main.main3 #section1 .container .gap .content a img {
+  width: 100%;
+}
+#wrap #main.main3 #section2 {
+  width: 100%;
+  padding: 0 0 100px 0;
+}
+#wrap #main.main3 #section2 .container {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+#wrap #main.main3 #section2 .container .gap {
+  width: 100%;
+  margin: 0;
+}
+#wrap #main.main3 #section2 .container .gap .title {
+  width: 100%;
+  padding: 0 7px 50px 7px;
+  text-align: center;
+}
+#wrap #main.main3 #section2 .container .gap .title h2 {
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+}
+#wrap #main.main3 #section2 .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #main.main3 #section2 .container .gap .content .left {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  margin: 0 46px 0 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .title-filter {
+  display: flex;
+  width: auto;
+  height: 40px;
+  margin: 0 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .title-filter span {
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .title-filter span:last-child {
+  color: rgb(153, 153, 153);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap {
+  margin: 0 7px;
+  height: 100%;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap::-webkit-scrollbar {
+  width: 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul {
+  width: 100%;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li:first-child {
+  border-top: 1px solid #eee;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li > a {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li > a > svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li > a.on svg {
+  transform: rotate(0deg);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub {
+  width: 100%;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub .category-sub-order {
+  margin-bottom: 15px;
+  display: flex;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub .category-sub-order > a {
+  order: 3;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub .category-sub-order > a:first-child {
+  order: 1;
+  color: #5f0088;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub .category-sub-order::after {
+  display: block;
+  order: 2;
+  margin: 2px 10px 0 10px;
+  background-color: #eee;
+  width: 1px;
+  height: 13px;
+  content: "";
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul {
+  width: 100%;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li {
+  width: 100%;
+  padding: 7px 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label:hover {
+  color: rgb(95, 0, 128);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label input {
+  display: none;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label input:checked ~ svg {
+  fill: rgba(95, 0, 128, 0.9);
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label svg {
+  vertical-align: middle;
+  margin: -2px 7px 0 0;
+  width: 18px;
+  height: 18px;
+  fill: none;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li label svg path {
+  stroke: #ddd;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li button {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  color: #999;
+  width: 100%;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li button:hover {
+  color: #5f0088;
+}
+#wrap #main.main3 #section2 .container .gap .content .left .col-gap .wrap > ul > li .category-sub ul li button svg {
+  margin: -4px 0 0 0;
+  transform: rotate(90deg);
+}
+#wrap #main.main3 #section2 .container .gap .content .right {
+  width: 798px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter {
+  display: flex;
+  width: auto;
+  height: 40px;
+  margin: 0 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter span {
+  color: rgb(153, 153, 153);
+  margin: 0 2px;
+  vertical-align: baseline;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter ul > li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 8px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter ul > li:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e2e2e2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-right: 8px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right .order-filter ul > li > a {
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li {
+  width: 266px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap {
+  margin: 0 7px 14px 7px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap {
+  width: 100%;
+  cursor: pointer;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.6s ease-in-out;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box > img:hover {
+  transform: scale(1.06);
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box a {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 2;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .img-box a img {
+  width: 100%;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption {
+  padding: 15px 0 30px 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h6 {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  padding: 0 0 10px 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h2 {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  padding: 0 0 15px 0;
+  line-height: 140%;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 strong {
+  font-size: 17px;
+  color: rgb(250, 98, 47);
+  margin: 0 10px 0 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 em {
+  color: rgb(51, 51, 51);
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h3 s {
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h5 {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  padding: 20px 0 15px 0;
+}
+#wrap #main.main3 #section2 .container .gap .content .right > ul > li .col-gap .wrap .caption h4 {
+  font-size: 12px;
+  color: rgb(95, 0, 128);
+  font-weight: 500;
+  background: rgb(244, 244, 244);
+  padding: 5px 5px 7px 5px;
+  display: inline-block;
+  border-radius: 3px;
+}

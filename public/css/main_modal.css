@@ -1,0 +1,51 @@
+#wrap {
+  width: 100%;
+}
+#wrap #mainmodal {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#wrap #mainmodal .wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrap #mainmodal .wrap .container {
+  width: 440px;
+  height: 645.5px;
+  margin: auto;
+}
+#wrap #mainmodal .wrap .container .img-box {
+  width: 100%;
+}
+#wrap #mainmodal .wrap .container .img-box a {
+  display: block;
+  width: 100%;
+}
+#wrap #mainmodal .wrap .container .img-box a img {
+  width: 100%;
+}
+#wrap #mainmodal .wrap .container .button-box {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #fff;
+  display: flex;
+}
+#wrap #mainmodal .wrap .container .button-box button {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
+}

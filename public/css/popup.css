@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url(../css/fonts.css);
+@import url(../css/reset.css);
+#wrap {
+  width: 100%;
+  height: 100%; /* 569높이 */
+  position: relative;
+  z-index: 1;
+}
+#wrap .container {
+  width: 100%;
+  padding: 50px 30px 30px 30px;
+}
+#wrap .container .address-form {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+#wrap .container .address-form .title {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+#wrap .container .address-form .title h1 {
+  font-weight: 500;
+  padding: 0 0 10px 0;
+  font-size: 24px;
+}
+#wrap .container .address-form .title h1 span {
+  color: #333;
+}
+#wrap .container .address-form .title h1 span:first-child {
+  color: #5f0080;
+}
+#wrap .container .address-form .title h2 {
+  color: #666;
+  font-size: 16px;
+}
+#wrap .container .address-form .content {
+  width: 100%;
+}
+#wrap .container .address-form .content ul {
+  width: 100%;
+}
+#wrap .container .address-form .content ul li {
+  width: 100%;
+}
+#wrap .container .address-form .content ul li form {
+  width: 100%;
+}
+#wrap .container .address-form .content ul li form ul {
+  width: 100%;
+}
+#wrap .container .address-form .content ul li form ul li {
+  width: 100%;
+  padding: 10px 0;
+}
+#wrap .container .address-form .content ul li form ul li:first-child {
+  position: relative;
+  padding: 0 130px 0 0;
+}
+#wrap .container .address-form .content ul li form ul li input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #ddd;
+  outline-offset: -1px;
+  outline: 1px solid transparent;
+  transition: all 0.3s;
+  padding: 0 15px;
+  border-radius: 3px;
+}
+#wrap .container .address-form .content ul li form ul li input:focus {
+  outline: 1px solid #777;
+}
+#wrap .container .address-form .content ul li form ul li input::-moz-placeholder {
+  color: #bbb;
+}
+#wrap .container .address-form .content ul li form ul li input::placeholder {
+  color: #bbb;
+}
+#wrap .container .address-form .content ul li form ul li button {
+  height: 44px;
+  border: 1px solid #5f0080;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#wrap .container .address-form .content ul li form ul li button.addr-research-btn {
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #5f0080;
+  background: #fff;
+}
+#wrap .container .address-form .content ul li form ul li button.addr-save-btn {
+  width: 100%;
+  background: #5f0080;
+  color: #fff;
+}
+#wrap .container .address-form .content ul li form ul li button img {
+  width: 30px;
+  height: 30px;
+}
+#wrap .container .address-form .content ul li form ul li p {
+  color: #666;
+  font-size: 12px;
+  line-height: 140%;
+}
+#wrap .container .address-form .content ul li #info-box {
+  padding: 25px 0 0 0;
+}
+#wrap .container .address-form .content ul li #info-box h3 {
+  font-size: 14px;
+  color: #f03f40;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+#wrap .container .address-form .content ul li #info-box h3 img {
+  margin: -2px 10px 0 0;
+}
+#wrap .container .address-form .content ul li #info-box div {
+  padding: 0 0 0 25px;
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .container .address-form .content ul li #info-box div em {
+  color: #666;
+}
+#wrap .container .address-form .content ul li #info-box div span button.detail {
+  font-size: 12px;
+  color: #999;
+  border: 0;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+#wrap .container .address-form .content ul li #info-box div span span {
+  vertical-align: middle;
+  margin-left: -5px;
+}
+#wrap .container .address-form .content ul li #info-box div span span img {
+  margin: -2px 2px 0 5px;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+#wrap .container .address-form .content ul li #info-box div span span img.on {
+  transform: rotate(180deg);
+}
+#wrap .container .address-form .content ul li #info-box ul.info-tootip {
+  display: none;
+  padding: 20px 0px 0px 25px;
+}
+#wrap .container .address-form .content ul li #info-box ul.info-tootip.on {
+  display: block;
+}
+#wrap .container .address-form .content ul li #info-box ul.info-tootip li {
+  padding: 1.5px 0;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

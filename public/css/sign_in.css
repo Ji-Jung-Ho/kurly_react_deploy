@@ -1,0 +1,82 @@
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+#wrap #main #signIn {
+  width: 100%;
+  padding: 60px 0 0 0;
+}
+#wrap #main #signIn .container {
+  width: 340px;
+  margin: 0 auto;
+}
+#wrap #main #signIn .container .title {
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #signIn .container .title h2 {
+  color: #333;
+  font-weight: 500;
+  font-size: 24px;
+}
+#wrap #main #signIn .container .content {
+  width: 100%;
+}
+#wrap #main #signIn .container .content form {
+  width: 100%;
+}
+#wrap #main #signIn .container .content form ul {
+  width: 100%;
+}
+#wrap #main #signIn .container .content form ul li {
+  width: 100%;
+  padding-bottom: 10px;
+}
+#wrap #main #signIn .container .content form ul li:nth-child(3) {
+  height: 54px;
+  text-align: right;
+  font-size: 12px;
+  padding-top: 5px;
+}
+#wrap #main #signIn .container .content form ul li input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #ddd;
+  padding: 0 15px;
+}
+#wrap #main #signIn .container .content form ul li .error-message {
+  padding: 7px 0 0 0;
+  color: #f03f40;
+  font-size: 13px;
+  display: none;
+}
+#wrap #main #signIn .container .content form ul li .error-message.on {
+  display: block;
+}
+#wrap #main #signIn .container .content form ul li a {
+  color: #333;
+}
+#wrap #main #signIn .container .content form ul li i {
+  color: #ccc;
+  margin: 0 5px;
+}
+#wrap #main #signIn .container .content form ul li button {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #5f0080;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+#wrap #main #signIn .container .content form ul li button[type=submit] {
+  background: #5f0080;
+  color: #fff;
+}
+#wrap #main #signIn .container .content form ul li button[type=button] {
+  background: #fff;
+  color: #5f0080;
+}

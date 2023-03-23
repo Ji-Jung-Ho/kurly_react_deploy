@@ -1,0 +1,31 @@
+#wrap {
+    width: 100%;
+    #main.main4 {
+        width: 100%;
+        #banner {
+            width: 100%;
+            .container {
+                width: 100%;
+                max-width: 1050px;
+                margin: 0 auto;
+                .title {
+                    width:100%;
+                    h2 {
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+                .content {
+                    width: 100%;
+                    ul.banner-list {
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

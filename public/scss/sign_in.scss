@@ -1,0 +1,76 @@
+#wrap {
+    width:100%;
+    #main {
+        width:100%;z-index: 2;position: relative;
+        #signIn {
+            width:100%;
+            padding:60px 0 0 0;
+            .container {
+                width:340px;
+                margin:0 auto;
+                .title {
+                    width:100%;
+                    text-align: center;
+                    h2 {
+                        color:#333;
+                        font-weight: 500;
+                        font-size: 24px;
+                    }
+                }
+                .content {
+                    width:100%;
+                    form {
+                        width:100%;
+                        ul {
+                            width:100%;
+                            li {
+                                width:100%;
+                                padding-bottom:10px;
+                                &:nth-child(3) {
+                                    height: 54px;
+                                    text-align: right;  
+                                    font-size:12px;
+                                    padding-top:5px;
+                                }
+                                input {
+                                    width:100%;
+                                    height: 54px;
+                                    border: 1px solid #ddd;
+                                    padding: 0 15px;
+                                }
+                                .error-message {
+                                    padding: 7px 0 0 0;
+                                    color:#f03f40;
+                                    font-size:13px;
+                                    display: none;
+                                    &.on{
+                                        display: block;
+                                    }
+                                }
+                                a {color:#333;}
+                                i {color:#ccc;margin:0 5px;}
+                                button {
+                                    width:100%;
+                                    height: 54px;
+                                    border:1px solid #5f0080;
+                                    cursor: pointer;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    &[type=submit]{
+                                        background: #5f0080;
+                                        color:#fff;
+                                    }
+                                    &[type=button]{
+                                        background: #fff;
+                                        color:#5f0080;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
