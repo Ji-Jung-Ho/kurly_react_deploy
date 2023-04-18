@@ -1,5 +1,6 @@
 import React, { ChangeEvent, MouseEvent } from 'react';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom'
 
 // interface object
 interface MemberTypes {
@@ -68,6 +69,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
     // 회원가입 상태관리 변수
     // props 변수값을 상태관리 변수로 지정 (제네릭)
     const [state, setState] = React.useState<MemberTypes>(회원);
+    const navigate: any = useNavigate();
 
     // 1. 아이디 입력상자 온체인지 이벤트 구현
     // 입력상자 돔 요소 타입설정 : change event
@@ -953,7 +955,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
             })
             .then((res)=>{
                 if(res.data.indexOf('성공') !== -1) {
-                    introMainFn();
+                    navigate("/");
                 }
             })
             .catch((err)=>{

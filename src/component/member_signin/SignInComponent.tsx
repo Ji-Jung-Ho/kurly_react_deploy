@@ -15,77 +15,13 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
 
   const[state, setState] = React.useState<MemberTypes>(login);
 
-  // 아이디 입력상자 온체인지 이벤트 구현
-  const onChangeId=(e: ChangeEvent<HTMLInputElement>)=>{
-    const regExp1: RegExp = /[`~!@#$^&*()\-_=+\\|[\]{};:'",<.>/?]/g;
-    const regExp2: RegExp = /.{6,16}/g;
-    const regExp3: RegExp = /(?=.*[A-Za-z])+(?=.*[0-9])*/g;
-    const regExp4: RegExp = /\s/g;
-    const regExp5: RegExp = /([a-zA-Z0-9])+([ㄱ-ㅎ|ㅏ-ㅣ|가-힣])|([ㄱ-ㅎ|ㅏ-ㅣ|가-힣])+([a-zA-Z0-9])/;
-
-    let {value} = e.target;
-    let loginId: string = '';
-    let isLogin: boolean = false;
-    let loginIdErrMsg: string = '';
-
-    loginId = value.replace(regExp1, '');
-
-    if (regExp2.test(loginId) === false || regExp3.test(loginId) === false || regExp4.test(loginId) === true) {
-      isLogin = true;
-      loginIdErrMsg = '6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합';
-    }
-    else if (regExp5.test(loginId) === true) {
-      isLogin = true;
-      loginIdErrMsg = '한글 입력 불가';
-    }
-    else {
-      isLogin = false;
-      loginIdErrMsg = '';
-    }
-    
-    setState({
-      ...state,
-      loginId: value,
-      isLogin: isLogin,
-      loginIdErrMsg: loginIdErrMsg
-    })
-
+  const onChangeUserId=(e: any)=>{
+    setState(e.target.value);
   }
 
-  // 비밀번호 입력상자 온체인지 이벤트 구현
-  const onChangePw=(e: ChangeEvent<HTMLInputElement>)=>{
-    const regExp1: RegExp = /.{10,}/g;
-    const regExp2: RegExp = /((?=.*[A-Za-z]+)(?=.*[0-9]+))|((?=.*[A-Za-z]+)(?=.*[`~!@#$%^&*()\-_=+\\|[\]{};:'",<.>/?]+))|((?=.*[0-9]+)(?=.*[`~!@#$%^&*()\-_=+\\|[\]{};:'",<.>/?]+))/g;
-    const regExp3: RegExp = /\s/g;                    
-    const regExp4: RegExp = /(\d)\1\1/g;
-    const {value} = e.target;
-
-    let loginPwErrMsg: string = '';
-    let isLoginPw: boolean = false;
-
-    if(regExp1.test(value)===false){
-        loginPwErrMsg = '최소 10자 이상 입력';
-        isLoginPw = true;
-    }
-    else if(regExp2.test(value)===false || regExp3.test(value)===true){
-        loginPwErrMsg = '영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합';
-        isLoginPw = true;
-    }
-    else if(regExp4.test(value)===true){
-        loginPwErrMsg = '동일한 글자 3개 이상 연속 사용 불가';
-        isLoginPw = true;
-    }
-    else { // 정상
-        loginPwErrMsg = '';
-        isLoginPw = false;
-    }
-
-    setState({
-        ...state,
-        loginPw : value,
-        loginPwErrMsg : loginPwErrMsg,
-        isLoginPw : isLoginPw
-    })
+  // 비밀번호 입력칸 값 변경 이벤트 핸들러
+  const onChangeUserPw=(e: any)=>{
+    setState(e.target.value);
   }
 
   // 로그인 버튼 클릭 이벤트 구현
@@ -113,7 +49,7 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
                     name="login_id" 
                     placeholder="아이디를 입력해주세요"
                     maxLength={16}
-                    onChange={onChangeId}
+                    onChange={onChangeUserId}
                     value={state.loginId}
                     />
                   <p className={`error-message loginId-error-message${state.isLogin ? ' on' : ''}`}>{state.loginIdErrMsg}</p>
@@ -125,7 +61,7 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
                   name="pw" 
                   placeholder="비밀번호를 입력해주세요"
                   maxLength={50}
-                  onChange={onChangePw}
+                  onChange={onChangeUserPw}
                   value={state.loginPw}
                   />
                   <p className={`error-message loginPw-error-message${state.isLoginPw ? ' on' : ''}`}>{state.loginPwErrMsg}</p>
@@ -143,14 +79,3 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
   </>
   );
 };
-
-MemberSignInComponent.defaultProps = {
-  login : {
-    loginId: '',
-    loginIdErrMsg: '',
-    isLogin: false,
-    loginPw: '',
-    loginPwErrMsg: '',
-    isLoginPw: false
-  }
-}
