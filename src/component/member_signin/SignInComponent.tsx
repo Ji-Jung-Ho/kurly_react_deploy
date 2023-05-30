@@ -1,4 +1,4 @@
-import React, { ChangeEvent, MouseEvent } from 'react';
+import React, {MouseEvent } from 'react';
 import {Outlet, Link} from 'react-router-dom'
 
 interface MemberTypes {
@@ -24,7 +24,7 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
     setState(e.target.value);
   }
 
-  // 로그인 버튼 클릭 이벤트 구현
+  // 로그인 버튼 클릭 이벤트 구현`
   const onClickLogin=(e:MouseEvent<HTMLButtonElement>)=>{
     e.preventDefault();
     
@@ -50,9 +50,7 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
                     placeholder="아이디를 입력해주세요"
                     maxLength={16}
                     onChange={onChangeUserId}
-                    value={state.loginId}
                     />
-                  <p className={`error-message loginId-error-message${state.isLogin ? ' on' : ''}`}>{state.loginIdErrMsg}</p>
                 </li>
                 <li>
                   <input 
@@ -62,9 +60,7 @@ export default function MemberSignInComponent ({login, isConfirmModalFn} :any) {
                   placeholder="비밀번호를 입력해주세요"
                   maxLength={50}
                   onChange={onChangeUserPw}
-                  value={state.loginPw}
                   />
-                  <p className={`error-message loginPw-error-message${state.isLoginPw ? ' on' : ''}`}>{state.loginPwErrMsg}</p>
                 </li>
                 <li><a href="#!">아이디찾기</a><i>|</i><a href="#!">비밀번호찾기</a></li>
                 <li><button type="submit" className="submit-btn" onClick={onClickLogin}>로그인</button></li>

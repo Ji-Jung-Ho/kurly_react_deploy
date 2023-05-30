@@ -64,7 +64,7 @@ interface MemberTypes {
     이용약관동의:           Array<string>
 }
 
-export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isTermsViewFn, introMainFn}: any) {
+export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isTermsViewFn}: any) {
 
     // 회원가입 상태관리 변수
     // props 변수값을 상태관리 변수로 지정 (제네릭)
@@ -125,7 +125,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
         }
         else {
             axios({
-                url: 'http://kiik52.dothome.co.kr/kurly_study/member_select.php',
+                url: 'https://kiik52.com/kurly_study/member_select.php',
                 method: 'GET'
             })
             .then((res)=>{
@@ -292,12 +292,11 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
         }
         else{        
             axios({
-                url: 'http://kiik52.dothome.co.kr/kurly_study/member_select.php',
+                url: 'https://kiik52.com/kurly_study/member_select.php',
                 method: 'GET'
             })
             .then((res)=>{
                 let result: Array<boolean> = res.data.map((item: any)=>item.이메일 === state.이메일);
-    
                 if (result.includes(true)) {
                     isConfirmModalFn('사용 불가능한 이메일 입니다.');
                     이메일중복확인 = false;
@@ -755,7 +754,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
         }
         else {
             axios({
-                url: 'http://kiik52.dothome.co.kr/kurly_study/member_select.php',
+                url: 'https://kiik52.com/kurly_study/member_select.php',
                 method: 'GET'
             })
             .then((res)=>{
@@ -888,7 +887,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
 
         let cnt: number = 0;
 
-        state.이용약관동의.map((item)=>{
+        state.이용약관동의.map((item: any)=>{
             if (item.indexOf("필수") !== -1) {
                 cnt++;
             }
@@ -949,7 +948,7 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
             newFormData.append('gaibDate',  `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`)
 
             axios({
-                url: 'http://kiik52.dothome.co.kr/kurly_study/member_insert.php',
+                url: 'https://kiik52.com/kurly_study/member_insert.php',
                 method:'POST',
                 data: newFormData
             })
@@ -1125,11 +1124,11 @@ export default function SignUpComponent ({회원, isConfirmModalFn, isTimer, isT
                                         <button type="button" className={`addr-hide addr-re-btn${state.isAddrHide ? ' on' : ''}`} 
                                         onClick={onClickAddrReBtn}
                                         >
-                                        <img src="./img/ico_search.svg" alt=""/>재검색</button>
+                                        <img src="./img/sign_up/ico_search.svg" alt=""/>재검색</button>
                                         <button type="button" className={`addr-api-btn${state.isAddrApiBtn ? ' on' : ''}`}
                                         onClick={onClickAddressSearchBtn}
                                         >
-                                        <img src="./img/ico_search.svg" alt=""/>주소검색</button>                                        
+                                        <img src="./img/sign_up/ico_search.svg" alt=""/>주소검색</button>                                
                                     </div>                                    
                                 </div>
                             </li>                        
