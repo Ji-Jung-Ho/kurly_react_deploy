@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/kurly_react_deploy/static/js/main.99593341.js",
+    "index.html": "/kurly_react_deploy/index.html",
+    "main.99593341.js.map": "/kurly_react_deploy/static/js/main.99593341.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.99593341.js"
+  ]
+}
